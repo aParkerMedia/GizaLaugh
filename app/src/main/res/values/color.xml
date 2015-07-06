@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="actionbar_background">#363636</color>
+    <color name="actionbar_text">#ffffff</color>
+    <color name="actionbardark_background">#2b2b2b</color>
+    <color name="main_background">#c8926e</color>
+    <color name="main_text">#363636</color>
+    <color name="tab_background">#505050</color>
+
+    ]  <color name="tabsScrollColor">#8a140e</color>
+</resources>
+

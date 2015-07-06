@@ -1,0 +1,12 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="uk.aparkermedia.gizalaugh.AppCredits">
+    <item android:id="@+id/action_twitter" android:title="@string/action_twitter"
+        android:orderInCategory="100" app:showAsAction="never" />
+    <item android:id="@+id/action_facebook" android:title="@string/action_facebook"
+        android:orderInCategory="100" app:showAsAction="never" />
+    <item android:id="@+id/action_youtube" android:title="@string/action_youtube"
+        android:orderInCategory="100" app:showAsAction="never" />
+
+</menu>
