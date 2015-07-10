@@ -11,7 +11,7 @@
     <string name="title_activity_video_player">Video Player</string>
     <string name="logo_desc">Giz a Laugh Logo</string>
     <string name="title_activity_app_credits">App Credits</string>
-    <string name="app_version">App Version: 1.0.0</string>
+    <string name="app_version">App Version: 1.0.1</string>
     <string name="title_activity_no_internet">NoInternet</string>
     <string name="noInternet_message">No network connection detected! , Please connect to a network/WiFi then reload the app...</string>
     <string name="title_activity_main_activity2">MainActivity2</string>
@@ -20,6 +20,7 @@
     <string name="title_section1">Blog</string>
     <string name="title_section2">Videos</string>
     <string name="title_section3">Comedians</string>
+    <string name="title_section4">Upload</string>
     <string name="title_activity_splash_screen">SplashScreen</string>
     <string name="app_website">gizalaugh.tv</string>
     <string name="app_creator">App by: Arron Parker (aparkermedia.uk)</string>

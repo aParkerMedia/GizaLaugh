@@ -15,6 +15,10 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.webkit.WebView;
 
+import com.viewpagerindicator.CirclePageIndicator;
+import com.viewpagerindicator.PageIndicator;
+import com.viewpagerindicator.TitlePageIndicator;
+
 
 public class MainActivity extends ActionBarActivity {
 
@@ -55,6 +59,9 @@ public class MainActivity extends ActionBarActivity {
         // Set up the ViewPager with the sections adapter.
         mViewPager = (ViewPager) findViewById(R.id.pager);
         mViewPager.setAdapter(mSectionsPagerAdapter);
+
+        CirclePageIndicator titleIndicator = (CirclePageIndicator)findViewById(R.id.titles);
+        titleIndicator.setViewPager(mViewPager);
 
     }
 
@@ -139,6 +146,8 @@ public class MainActivity extends ActionBarActivity {
 
                 case 2:
                     return ComediansFragment.newInstance(position + 1);
+                case 3:
+                    return UploaderFragment.newInstance(position + 1);
 
             }
             return null;
@@ -161,6 +170,8 @@ public class MainActivity extends ActionBarActivity {
                     return getString(R.string.title_section2).toUpperCase(l);
                 case 2:
                     return getString(R.string.title_section3).toUpperCase(l);
+                case 4:
+                    return getString(R.string.title_section4).toUpperCase(l);
             }
             return null;
         }

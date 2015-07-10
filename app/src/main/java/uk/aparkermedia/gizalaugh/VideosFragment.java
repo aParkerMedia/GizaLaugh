@@ -93,10 +93,11 @@ public class VideosFragment extends Fragment {
 
                     if (newProgress == 100) {
                         loadingProgressBar.setVisibility(View.GONE);
+                        myWebView.setVisibility(View.VISIBLE);
 
                     } else {
                         loadingProgressBar.setVisibility(View.VISIBLE);
-
+                        myWebView.setVisibility(View.GONE);
                     }
 
                 }
