@@ -93,23 +93,29 @@ public class MainActivity extends ActionBarActivity {
 
         //noinspection SimplifiableIfStatement
         switch(item.getItemId()){
-            case R.id.action_twitter:
-                String url = "https://www.twitter.com/gizalaughtv";
+            case R.id.action_website:
+                String url = "http://www.gizalaugh.tv";
                 Intent i = new Intent(Intent.ACTION_VIEW);
                 i.setData(Uri.parse(url));
                 startActivity(i);
                 break;
-            case R.id.action_facebook:
-                String url1 = "https://www.facebook.com/gizalaughtv";
+            case R.id.action_twitter:
+                String url1 = "https://www.twitter.com/gizalaughtv";
                 Intent i1 = new Intent(Intent.ACTION_VIEW);
                 i1.setData(Uri.parse(url1));
                 startActivity(i1);
                 break;
-            case R.id.action_youtube:
-                String url2 = "https://www.youtube.com/channel/UCUu94nkQjG1NgnHRDpQ5Kvg";
+            case R.id.action_facebook:
+                String url2 = "https://www.facebook.com/gizalaughtv";
                 Intent i2 = new Intent(Intent.ACTION_VIEW);
                 i2.setData(Uri.parse(url2));
                 startActivity(i2);
+                break;
+            case R.id.action_youtube:
+                String url3 = "https://www.youtube.com/channel/UCUu94nkQjG1NgnHRDpQ5Kvg";
+                Intent i3 = new Intent(Intent.ACTION_VIEW);
+                i3.setData(Uri.parse(url3));
+                startActivity(i3);
                 break;
             case R.id.action_appcredits:
                 Intent openNewActivity = new Intent(getApplicationContext(), AppCredits.class);
