@@ -15,6 +15,7 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.webkit.WebView;
 
+import com.parse.ParseObject;
 import com.viewpagerindicator.CirclePageIndicator;
 import com.viewpagerindicator.PageIndicator;
 import com.viewpagerindicator.TitlePageIndicator;
@@ -62,6 +63,7 @@ public class MainActivity extends ActionBarActivity {
 
         CirclePageIndicator titleIndicator = (CirclePageIndicator)findViewById(R.id.titles);
         titleIndicator.setViewPager(mViewPager);
+
 
     }
 
@@ -152,8 +154,6 @@ public class MainActivity extends ActionBarActivity {
 
                 case 2:
                     return ComediansFragment.newInstance(position + 1);
-                case 3:
-                    return UploaderFragment.newInstance(position + 1);
 
             }
             return null;

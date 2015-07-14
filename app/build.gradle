@@ -8,8 +8,8 @@ android {
         applicationId "uk.aparkermedia.gizalaugh"
         minSdkVersion 17
         targetSdkVersion 22
-        versionCode 3
-        versionName "1.0.2"
+        versionCode 4
+        versionName "1.0.3"
     }
     buildTypes {
         release {
@@ -26,4 +26,9 @@ dependencies {
 
     compile 'fr.avianey.com.viewpagerindicator:library:2.4.1@aar'
 
+}
+
+dependencies {
+    compile 'com.parse.bolts:bolts-android:1.+'
+    compile fileTree(dir: 'libs', include: 'Parse-*.jar')
 }

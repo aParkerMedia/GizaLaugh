@@ -25,5 +25,6 @@
     <string name="title_activity_splash_screen">SplashScreen</string>
     <string name="app_website">gizalaugh.tv</string>
     <string name="app_creator">App by: Arron Parker (aparkermedia.uk)</string>
+    <string name="title_activity_browser">Browser</string>
 
 </resources>
