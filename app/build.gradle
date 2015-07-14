@@ -8,7 +8,7 @@ android {
         applicationId "uk.aparkermedia.gizalaugh"
         minSdkVersion 17
         targetSdkVersion 22
-        versionCode 5
+        versionCode 6
         versionName "1.1.0"
     }
     buildTypes {
@@ -28,6 +28,9 @@ dependencies {
 
 }
 
+dependencies {
+    compile 'com.android.support:support-v4:22.+'
+}
 dependencies {
     compile 'com.parse.bolts:bolts-android:1.+'
     compile fileTree(dir: 'libs', include: 'Parse-*.jar')

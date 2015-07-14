@@ -3,7 +3,9 @@ package uk.aparkermedia.gizalaugh;
 import java.util.Locale;
 
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.net.Uri;
+import android.preference.PreferenceManager;
 import android.support.v7.app.ActionBarActivity;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
@@ -14,6 +16,7 @@ import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.webkit.WebView;
+import android.widget.TextView;
 
 import com.parse.ParseObject;
 import com.viewpagerindicator.CirclePageIndicator;
@@ -38,7 +41,6 @@ public class MainActivity extends ActionBarActivity {
      */
     ViewPager mViewPager;
 
-    public static WebView myWebView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -63,7 +65,6 @@ public class MainActivity extends ActionBarActivity {
 
         CirclePageIndicator titleIndicator = (CirclePageIndicator)findViewById(R.id.titles);
         titleIndicator.setViewPager(mViewPager);
-
 
     }
 
@@ -123,12 +124,12 @@ public class MainActivity extends ActionBarActivity {
                 Intent openNewActivity = new Intent(getApplicationContext(), AppCredits.class);
                 startActivity(openNewActivity);
                 break;
-
         }
 
 
         return super.onOptionsItemSelected(item);
     }
+
 
 
     /**
@@ -176,8 +177,6 @@ public class MainActivity extends ActionBarActivity {
                     return getString(R.string.title_section2).toUpperCase(l);
                 case 2:
                     return getString(R.string.title_section3).toUpperCase(l);
-                case 4:
-                    return getString(R.string.title_section4).toUpperCase(l);
             }
             return null;
         }
