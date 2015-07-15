@@ -65,12 +65,6 @@ public class AppCredits extends ActionBarActivity {
 
             //noinspection SimplifiableIfStatement
             switch (item.getItemId()) {
-                case R.id.action_website:
-                    String url = "http://www.gizalaugh.tv";
-                    Intent i = new Intent(Intent.ACTION_VIEW);
-                    i.setData(Uri.parse(url));
-                    startActivity(i);
-                    break;
                 case R.id.action_twitter:
                     String url1 = "https://www.twitter.com/gizalaughtv";
                     Intent i1 = new Intent(Intent.ACTION_VIEW);
@@ -88,6 +82,18 @@ public class AppCredits extends ActionBarActivity {
                     Intent i3 = new Intent(Intent.ACTION_VIEW);
                     i3.setData(Uri.parse(url3));
                     startActivity(i3);
+                    break;
+                case R.id.action_website:
+                    String url = "http://www.gizalaugh.tv";
+                    Intent i = new Intent(Intent.ACTION_VIEW);
+                    i.setData(Uri.parse(url));
+                    startActivity(i);
+                    break;
+                case R.id.action_privacy_policy:
+                    String privacyurl = "http://www.gizalaugh.tv/android-privacy";
+                    Intent privacy = new Intent(Intent.ACTION_VIEW);
+                    privacy.setData(Uri.parse(privacyurl));
+                    startActivity(privacy);
                     break;
 
             }
